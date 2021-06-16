@@ -9,7 +9,7 @@
 */
 
 :root {
-    --color:       rgba(35, 35, 39, .6); /* Default: rgba(35, 35, 39, .6), Background coloring, set transparent to disable. */
+    --color:         rgba(35, 35, 39, .6); /* Default: rgba(35, 35, 39, .6), Background coloring, set transparent to disable. */
     --column:        1; /* Default: 1, Server column count. */
     --channel-width: 260px; /* Default: 260px,Channels width, set none to disable. */
     --animation:     ease-in-out .25s; /* Default: ease-in-out .25s, Comfort, set none to disable. */

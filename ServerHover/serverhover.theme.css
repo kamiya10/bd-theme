@@ -1,0 +1,46 @@
+/**
+* @name Server Hover
+* @author Kamiya
+* @authorId 437158166019702805
+* @version 1.1
+* @description Hover to expand the server tab
+* @source https://github.com/kamiya10/bd-theme/blob/main/ServerHover/
+* @update https://github.com/kamiya10/bd-theme/blob/main/ServerHover/serverhover.theme.css
+*/
+
+:root {
+    --color:       rgba(35, 35, 39, .6); /* Default: rgba(35, 35, 39, .6), Background coloring, set transparent to disable. */
+    --column:        1; /* Default: 1, Server column count. */
+    --channel-width: 260px; /* Default: 260px,Channels width, set none to disable. */
+    --animation:     ease-in-out .25s; /* Default: ease-in-out .25s, Comfort, set none to disable. */
+    --shadow:        0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22); /* Default: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22),Shadows that elevated server bar, set none to disable.*/
+    --blur:          2px; /* Default: 2px,Background filtering, set 0px to disable.*/
+}
+
+.sidebar-2K8pFh {
+    margin-left: 5px;
+    width: var(--channel-width);
+}
+
+.channel-2QD9_O {
+    max-width: var(--channel-width);
+}
+
+.guilds-1SWlCJ {
+    background-color: var(--color);
+    backdrop-filter: blur(var(--blur));
+    position: absolute;
+    width: calc(5px * var(--column));
+    height: 100%;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    z-index: 5 !important;
+    transition: width var(--animation), opacity var(--animation);
+}
+
+.guilds-1SWlCJ:hover,.guilds-1SWlCJ:focus  {
+    box-shadow: var(--shadow);
+    width: 76px;
+    opacity: 1;
+}

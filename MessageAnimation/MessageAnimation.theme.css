@@ -1,0 +1,70 @@
+/**
+* @name Message Animation
+* @author Kamiya
+* @authorId 437158166019702805
+* @version 1.0
+* @description Adds animation to messages.
+* @source https://github.com/kamiya10/bd-theme/tree/main/MessageAnimation
+* @updateUrl https://github.com/kamiya10/bd-theme/blob/main/MessageAnimation/MessageAnimation.theme.css
+*/
+
+:root {
+    --style: fade-slide-right; /* How the animation will look. Avaliable: fade, slide-right, slide-left, expand, custom. */
+    --duration: 400ms; /* How long the animation will last. Defaults: 400ms. */
+    --velocity: cubic-bezier(.2,.5,.5,1); /* How the velocity will change base on cubic-bezier. Defaults: cubic-bezier(.2,.5,.5,1). */
+}
+
+@keyframes fade {
+    from {
+      opacity: 0;
+    }
+}
+
+@keyframes fade-slide-right {
+    from {
+      opacity: 0;
+      margin-left: 600px;
+    }
+}
+
+@keyframes fade-slide-left {
+    from {
+      opacity: 0;
+      margin-right: 600px;
+    }
+}
+
+@keyframes fade-expand {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+}
+
+@keyframes expand {
+    from {
+        transform: scale(0);
+    }
+}
+
+@keyframes slide-right {
+    from {
+      margin-left: 600px;
+    }
+}
+
+@keyframes slide-left {
+    from {
+      margin-right: 600px;
+    }
+}
+
+@keyframes custom {
+    from {
+        transform: scale(0);
+    }
+}
+
+.wrapper-2a6GCs{
+    animation: var(--style) var(--duration) var(--velocity);
+}

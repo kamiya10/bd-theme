@@ -1,5 +1,5 @@
 # Message Animation
-Add animations to messages.
+Adds animation to messages.
 
 ## Preview
 ### fade-slide-right

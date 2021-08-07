@@ -2,7 +2,7 @@
 * @name Server Hover
 * @author Kamiya
 * @authorId 437158166019702805
-* @version 1.1
+* @version 1.2
 * @description Hover to expand the server tab
 * @source https://github.com/kamiya10/bd-theme/blob/main/ServerHover/
 * @update https://github.com/kamiya10/bd-theme/blob/main/ServerHover/serverhover.theme.css
@@ -43,4 +43,8 @@
     box-shadow: var(--shadow);
     width: 76px;
     opacity: 1;
+}
+
+.bannerImage-3KhIJ6 {
+    width: var(--channel-width);
 }
